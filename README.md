@@ -2,7 +2,7 @@
 
 [`click`](https://click.palletsprojects.com/) 是用于创建命令行工具的 Python 包。
 
-`click-template` 是一个 `click` 的模板项目，用于快速创建命令行工具。
+`click-template` 是一个 `click` 的模板项目，用于快速创建命令行工具。另外，`click-template` 模板支持了命令缩写特性，即如果命令有唯一的前缀，那么可以使用缩写来代替命令，例如 `click-template h` 代替 `click-template hello`。
 
 ## 目录结构
 
@@ -42,6 +42,12 @@ pip install -e . -v
 
   ```
   click-template hello tom
+  ```
+
+- 执行 hello 命令的缩写
+
+  ```
+  click-template h tom
   ```
 
 ## 实现自己的命令行工具
